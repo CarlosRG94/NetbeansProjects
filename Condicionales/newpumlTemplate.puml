@@ -1,0 +1,36 @@
+@startuml
+class Asalariado {
+  - nombre: String
+  - dni: long
+  - diasVacaciones: int
+
+  + Asalariado(entradaNombre: String, entradaDni: long, entradaDiasVacaciones: int)
+  + getNombre(): String
+  + getDni(): long
+  + getDiasVacaciones(): int
+  + setNombre(entradaNombre: String): void
+  + setDni(entradaDni: long): void
+  + setDiasVacaciones(entradaDiasVacaciones: int): void
+}
+
+class TrabajadorDistribucion {
+  - turno: String
+
+  + TrabajadorDistribucion(entradaNombre: String, entradaDni: long, entradaDiasVacaciones: int, entradaTurno: String)
+  + getTurno(): String
+  + setTurno(entradaTurno: String): void
+}
+
+class TrabajadorProduccion {
+  - turno: String
+
+  + TrabajadorProduccion(entradaNombre: String, entradaDni: long, entradaDiasVacaciones: int, entradaTurno: String)
+  + getTurno(): String
+  + setTurno(entradaTurno: String): void
+}
+
+Asalariado -- TrabajadorDistribucion
+Asalariado -- TrabajadorProduccion
+
+
+@enduml
