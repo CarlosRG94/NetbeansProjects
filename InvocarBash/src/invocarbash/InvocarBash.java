@@ -33,7 +33,7 @@ public class InvocarBash {
                           System.out.println(in.nextLine());
                       }  
             }
-        }.start();
+        }.start(); 
         
         //Obtenemos la salida del proceso hijo
         PrintWriter salida = new PrintWriter(process_echo.getOutputStream());

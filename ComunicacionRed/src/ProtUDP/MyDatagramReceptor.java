@@ -29,7 +29,15 @@ public class MyDatagramReceptor {
                 //Recibe un paquete datagram desde el socket
                 ds.receive(pack);
                 //Muestra los datos por consola 
-                System.out.println(new String(pack.getData()));
+                String mensajeRecibido = new String(pack.getData());
+                System.out.println(mensajeRecibido);
+                DatagramPacket packEnvio = new DatagramPacket( mensajeRecibido.getBytes(),
+                mensajeRecibido.getBytes().length,pack.getAddress(),pack.getPort());
+                ds.send(pack);
+                int localPort = ds.getLocalPort();
+                 int Port = ds.getPort();
+                System.out.println(localPort);
+                System.out.println(Port);
                 
         }
         } catch (IOException e) {

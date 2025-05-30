@@ -34,6 +34,14 @@ public class MiDatagramEmisor {
             DatagramPacket pack = new DatagramPacket(data, data.length, address, port);
             DatagramSocket ds = new DatagramSocket();
             ds.send(pack);
+            byte[] buffer =new byte[1000];
+            DatagramPacket packRecibir = new DatagramPacket(buffer, buffer.length);
+            ds.receive(packRecibir);
+            System.out.println("Respuesta" + new String(packRecibir.getData()));
+              int localPort = ds.getLocalPort();
+                 int Port = ds.getPort();
+                System.out.println(localPort);
+                System.out.println(Port);
             ds.close();
 
         } catch (IOException e) {
@@ -45,13 +53,6 @@ public class MiDatagramEmisor {
         MiDatagramEmisor cliente = new MiDatagramEmisor(
                 Constantes.EJEMPLO_01.HOST, Constantes.EJEMPLO_01.PUERTO);
         String message = "Emisor enviando dato.....";
-
-        Timer timer = new Timer();
-        timer.scheduleAtFixedRate(new TimerTask() {
-            @Override
-            public void run() {
                 cliente.enviarMensaje(message);
-            }
-        }, 1000, 1000);
     }
 }

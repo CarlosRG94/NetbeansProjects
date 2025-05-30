@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE toc PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN" "http://java.sun.com/products/javahelp/toc_1_0.dtd">
+<toc version="1.0">
+    <tocitem text="Página principal" target="homepage">
+        <tocitem text="Capítulo 1" target="chapter1"/>
+        <tocitem text="Capítulo 2" target="chapter2"/>
+        <tocitem text="Capítulo 3" target="chapter3"/>
+        <tocitem text="Capítulo 4" target="chapter4"/>
+    </tocitem>
+</toc>

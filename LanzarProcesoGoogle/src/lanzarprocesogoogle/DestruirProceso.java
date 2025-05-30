@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class DestruirProceso {
      public static void main(String[] args)  {
         //Ruta del ejecutable de google chrome
-        String Ruta_Proceso = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
+        String Ruta_Proceso = "C:\\Windows\\system32\\notepad.exe";
         
         //Creamos el proceso de google Chrome
         ProcessBuilder pb = new ProcessBuilder(Ruta_Proceso);

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE index PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 1.0//EN" "http://java.sun.com/products/javahelp/index_1_0.dtd">
+<index version="1.0">
+    <indexitem name="Página principal" target="homepage"/>
+    <indexitem name="Capítulo 1" target="chapter1"/>
+    <indexitem name="Capítulo 2" target="chapter2"/>
+    <indexitem name="Capítulo 3" target="chapter3"/>
+    <indexitem name="Capítulo 4" target="chapter4"/>
+</index>
